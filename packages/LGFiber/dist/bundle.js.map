@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://lgfiber/./src/index.js"],"names":["a","console","log"],"mappings":";;;;;AAAA,IAAMA,CAAC,GAAG,CAAV;AACAC,OAAO,CAACC,GAAR,CAAYF,CAAZ,E","file":"bundle.js","sourcesContent":["const a = 1;\r\nconsole.log(a);\r\n"],"sourceRoot":""}

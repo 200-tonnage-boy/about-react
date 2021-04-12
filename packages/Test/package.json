@@ -1,0 +1,26 @@
+{
+  "name": "test",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "cjy-dell <554951030@qq.com>",
+  "homepage": "https://github.com/200-tonnage-boy/about-react#readme",
+  "license": "ISC",
+  "main": "lib/Test.js",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "files": [
+    "lib"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/200-tonnage-boy/about-react.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/200-tonnage-boy/about-react/issues"
+  }
+}
