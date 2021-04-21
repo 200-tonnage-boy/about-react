@@ -5,13 +5,23 @@ let subTask = null; // 当前任务
 
 const getFirstTask = () => {
   // 获取任务队列中的第一个任务
+  const task = taskQueue.pop()
+  // 根节点的Fiber对象
+  return {
+    props:task.props,
+    stateNode: task.dom,
+    tag: 'host_root',
+    effects: [],
+    child: null
+  }
 };
 const excuteTask = () => {
-  // 执行任务队列里的任务；
+  // 执行任务队列里的任务；执行任务就是根据Vdom对象创建Fiber对象，
+  // 注意组件树的顺序，在构建过程中，只有第一个儿子算是父亲的儿子，其他的是第一个儿子的兄弟
 };
 const workLoop = (deadLine) => {
   if (!subTask) {
-    // 当前没有任务的话就获取第一个
+    // 当前没有任务的话就获取第一个,注意这个函数并不是指获取任务队列里的第一个，应该是指根节点
     subTask = getFirstTask();
   }
   while (subTask && deadLine.timeRemaining() > 1) {
